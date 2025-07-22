@@ -7,3 +7,8 @@ def index():
     name = request.args.get("name", "world")
         
     return render_template("index.html", placeholder=name)
+
+@app.route("/greet")
+def greet():
+    name = request.args.get("name", "world")
+    return render_template("greet.html", name=name)

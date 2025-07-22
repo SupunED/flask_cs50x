@@ -4,6 +4,8 @@
         <title>hello</title>
     </head>
     <body>
-        hello, {{ placeholder }}
+        <form action="/greet" method="get">
+            <input type="text" placeholder="Name" name="name" autofocus autocomplete="off">
+            <button type="submit">Greet</Button>
     </body>
 </html>
